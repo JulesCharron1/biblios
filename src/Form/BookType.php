@@ -55,6 +55,7 @@ class BookType extends AbstractType
                 'choice_label' => 'id',
                 'multiple' => true,
                 'label' => 'Auteurs',
+                'by_reference' => false,
             ])
         ;
     }
