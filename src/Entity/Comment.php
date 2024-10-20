@@ -27,7 +27,7 @@ class Comment
     #[ORM\Column(nullable: true)]
     private ?\DateTimeImmutable $publishedAt = null;
 
-
+    #[ORM\Column(length: 255)]
     private ?CommentStatus $status = null;
 
     #[ORM\Column(type: Types::TEXT)]

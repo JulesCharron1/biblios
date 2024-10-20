@@ -49,6 +49,7 @@ class Book
     #[Assert\Type('integer')]
     private ?int $pageNumber = null;
 
+    #[ORM\Column(length: 255)]
     private ?BookStatus $status = null;
 
     #[ORM\ManyToOne(inversedBy: 'books')]
